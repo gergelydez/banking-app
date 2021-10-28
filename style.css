@@ -10,8 +10,8 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-   background-image: linear-gradient(
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(
     to left bottom,
     #a15b73,
     #a35c84,
@@ -31,7 +31,6 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  
 }
 
 nav {
@@ -106,7 +105,7 @@ nav {
   display: grid;
   grid-template-columns: 4fr 3fr;
   grid-template-rows: auto repeat(3, 15rem) auto;
-  gap: 2rem;  
+  gap: 2rem;
   opacity: 0;
   transition: all 1s;
 }
@@ -283,14 +282,12 @@ h2 {
   gap: 0.4rem 1rem;
 }
 
-
 .form.form--loan {
   grid-template-columns: 2.5fr 1fr 2.5fr;
 }
 .form__label--loan {
   grid-row: 2;
 }
-
 
 .form__input {
   width: 100%;
@@ -339,89 +336,85 @@ h2 {
 .timer {
   font-weight: 600;
 }
-.info {
+.info__container {
+  align-items: center;
+  text-align: center;
+  width: 70rem;
   background: linear-gradient(
     to right bottom,
     rgba(255, 255, 255, 0.5),
     rgba(255, 255, 255, 0.2)
   );
-  padding: 5rem;
+  padding: 3rem;
+  margin:5rem auto;
   border-radius: 2rem;
-  opacity: 1;
-  position: absolute;
-  top: 20rem;
-  
-  font-size: 2.2rem;
-  left: 10%;
+  opacity: 100;
+  font-size: 2rem;
+  font-family: inherit;
+}
+.users{
+  display: inline-block;
+  text-align: left;
+  padding:3rem .4rem;
+  margin: 2rem ;
+
 }
 @media only screen and (max-width: 768px) {
-  nav {padding: 2rem 2rem;
-        
-  }
- 
-  }
-  .login__input {
-   
-    padding: 0.5rem 1rem;
-    font-size: 1.3rem;
-
-    width: 8rem;
-   
-  }
- 
-  .welcome {
-    font-size: 1.5rem;
-    font-weight: 500;
-    padding: 1rem 2rem 0 0;
-    margin-left: 1rem;
-  }
-  .info {
-    
-    opacity: 1;
-    position: absolute;
-    font-size: 1.7rem;
-    left: 5%;
-    top: 20%;
-  }
-  .app {
-    position: relative;
-    max-width: 37rem;
-    margin: 2rem;
-    display: inline-block;
-    transition: all 1s;
-           
-  }
-  .summary {
-    display:block;
+  .info__container{
+    width: 80%;
+    margin:3rem 3rem;
     text-align: left;
-    margin: 1rem 0;
-    word-wrap: break-word;
-    border-radius: 1rem;
-       
-    }
-    
-.summary__label {
-  display: inline;
-  font-size: 1.2rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  margin-right: 0.8rem;
-}
-
-.summary__value {
-  display: inline;
-  font-size: 2.2rem;
-  margin-right: 2.5rem;
-}
-.btn--sort{
-  display: block;
-}
-.operation {
-  border-radius: 1rem;
-  padding: 3rem 4rem;
-  color: #333;
-  margin: 1rem 0;
-
-    }
-    
+ 
+  }
+  .users{
+    display: block;
+    text-align: left;
+    padding:0;
+    margin: 2rem 0;
+  
+  }
+  nav {
+    display: inline-block;
+    padding: 0 2rem;
+  }
+  .welcome {
+    font-size: 2.9rem;
+    font-weight: 500;
+    padding: 2rem ;
+    margin-left: 0;
+  }
+  .login{
+    margin-left:1rem 
+  }
+  .balance {
+    display: block;
+    margin:1rem ;
+  }
+ 
+  .app {
+    display: inline-block;
+    margin: 2rem ;
+    max-width: 100%;
+    margin: 2rem auto;
+    opacity: 0;
+    transition: all 1s;
+    padding:1rem ;
+  }
+  .operation{
+    margin:1rem 0;
+  }
+  .summary{
+    border-radius: 3rem;
+  }
+  .summary__label {
+    font-size: .7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-right: 0.1rem;
+  }
+  
+  .summary__value {
+    font-size: 1.4rem;
+    margin-right: 1rem;
+  }
 }
